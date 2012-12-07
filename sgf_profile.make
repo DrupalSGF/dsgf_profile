@@ -6,6 +6,7 @@ defaults[projects][subdir] = "contrib"
 ; Contrib
 projects[] = colorbox
 projects[] = context
+projects[] = context_add_assets
 projects[] = context_inline_editor
 projects[] = ctools
 projects[] = libraries
@@ -14,6 +15,15 @@ projects[] = pathauto
 projects[] = strongarm
 projects[] = token
 projects[] = features
+projects[] = link
+projects[] = date
+projects[] = addressfield
+projects[] = realname
+projects[] = profile2
+projects[] = logintoboggan
+projects[] = github_connect
+projects[] = ds
+projects[] = delta
 
 ; Themes
 projects[] = ember
