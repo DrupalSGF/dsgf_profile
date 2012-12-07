@@ -17,6 +17,6 @@ projects[] = features
 
 ; Themes
 projects[] = omega
-; projects[sgf_theme][type] = "theme"
-; projects[sgf_theme][download][type] = "git"
-; projects[sgf_theme][download][url] = "git@pub1:site/cpp/sgf_theme"
+projects[sgf_theme][type] = "theme"
+projects[sgf_theme][download][type] = "git"
+projects[sgf_theme][download][url] = "git@github.com:DrupalSGF/sgf_theme.git"
