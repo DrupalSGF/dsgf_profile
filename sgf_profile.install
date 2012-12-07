@@ -14,9 +14,15 @@ function sgf_profile_install() {
     'format' => 'full_html',
     'name' => 'HTML',
     'weight' => 1,
-    'filters' => array(),
+    'filters' => array(
+      // URL Filter
+      'filter_url' => array(
+        'weight' => 0,
+        'status' => 1,
+      ),
+    ),
   );
-  $full_html_format = ($object) $full_html_format;
+  $full_html_format = (object) $full_html_format;
   filter_format_save($full_html_format);
 
   // Restrict new user registrations for now.
@@ -44,7 +50,7 @@ function sgf_profile_install() {
 
   // Pathauto settings
   variable_set('pathauto_node_pattern', '[node:title]');
-  variable_set('pathauto_node_blog_pattern', 'blog/[user:name]/[node:title]';
+  variable_set('pathauto_node_blog_pattern', 'blog/[user:name]/[node:title]');
 
   // Theme settings
   variable_set('theme_default', 'omega');
