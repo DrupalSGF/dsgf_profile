@@ -26,7 +26,8 @@ function sgf_profile_install() {
   filter_format_save($full_html_format);
 
   // Restrict new user registrations for now.
-  $variable_set('user_register', USER_REGISTER_ADMINISTRATORS_ONLY);
+  // Later, user USER_REGISTER_VISITORS_ADMINISTRATIVE_APPROVAL or similar.
+  variable_set('user_register', USER_REGISTER_ADMINISTRATORS_ONLY);
 
   // Create a default role for administrators with all permissions assigned.
   $admin_role = new stdClass();
