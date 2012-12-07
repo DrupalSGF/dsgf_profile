@@ -5,19 +5,6 @@
  */
 
 /**
- * Implements hook_install().
- */
-function sgf_profile_install() {
-  // Turn off comments for basic pages
-  variable_set('comment_page', COMMENT_NODE_HIDDEN);
-
-  // Theme stuff!
-  variable_set('theme_default', 'omega');
-  variable_set('admin_theme', 'ember');
-  variable_set('node_admin_theme', '1');
-}
-
-/**
  * Implements hook_form_alter().
  */
 function sgf_profile_form_alter(&$form, $form_state) {

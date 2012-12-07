@@ -1,0 +1,58 @@
+<?php
+/**
+ * @file
+ * Install, update and uninstall functions for the `drupalsgf.org` install profile.
+ */
+
+/**
+ * Implements hook_install().
+ * @see system_install()
+ */
+function sgf_profile_install() {
+  // Set the default input format.
+  $full_html_format = array(
+    'format' => 'full_html',
+    'name' => 'HTML',
+    'weight' => 1,
+    'filters' => array(),
+  );
+  $full_html_format = ($object) $full_html_format;
+  filter_format_save($full_html_format);
+
+  // Restrict new user registrations for now.
+  $variable_set('user_register', USER_REGISTER_ADMINISTRATORS_ONLY);
+
+  // Create a default role for administrators with all permissions assigned.
+  $admin_role = new stdClass();
+  $admin_role->name = 'administrator';
+  $admin_role->weight = 2;
+  user_role_save($admin_role);
+  user_role_grant_permissions($admin_role->rid, array_keys(module_invoke_all('permission')));
+
+  // Set the administrator role.
+  variable_set('user_admin_role', $admin_role->rid);
+
+  // Assign user 1 the administrator role.
+  db_insert('user_roles')
+    ->fields(array('uid' => 1, 'rid' => $admin_role->rid))
+    ->execute();
+
+  // Basic Page settings
+  variable_set('node_options_page', array('status'));
+  variable_set('comment_page', COMMENT_NODE_HIDDEN);
+  variable_set('node_submitted_page', FALSE);
+
+  // Pathauto settings
+  variable_set('pathauto_node_pattern', '[node:title]');
+  variable_set('pathauto_node_blog_pattern', 'blog/[user:name]/[node:title]';
+
+  // Theme settings
+  variable_set('theme_default', 'omega');
+  variable_set('admin_theme', 'ember');
+  variable_set('node_admin_theme', '1');
+
+  // Various settings
+  variable_set('site_default_country', 'US');
+  variable_set('site_frontpage', 'blog');
+}
+
