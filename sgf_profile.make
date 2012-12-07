@@ -16,7 +16,8 @@ projects[] = token
 projects[] = features
 
 ; Themes
+projects[] = ember
 projects[] = omega
 projects[sgf_theme][type] = "theme"
 projects[sgf_theme][download][type] = "git"
-projects[sgf_theme][download][url] = "git://github.com/DrupalSGF/sgf_theme.git"
+projects[sgf_theme][download][url] = "http://github.com/DrupalSGF/sgf_theme.git"
