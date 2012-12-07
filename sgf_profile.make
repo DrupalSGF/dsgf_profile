@@ -19,4 +19,4 @@ projects[] = features
 projects[] = omega
 projects[sgf_theme][type] = "theme"
 projects[sgf_theme][download][type] = "git"
-projects[sgf_theme][download][url] = "https://github.com/DrupalSGF/sgf_theme.git"
+projects[sgf_theme][download][url] = "git://github.com/DrupalSGF/sgf_theme.git"
