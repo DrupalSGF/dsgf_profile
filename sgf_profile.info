@@ -1,0 +1,12 @@
+name = SGF Install Profile
+desc = A website's install profile.
+core = 7.x
+
+; Core
+; dependencies[] = block
+
+; Contrib modules
+dependencies[] = pathauto
+dependencies[] = strongarm
+dependencies[] = features
+dependencies[] = token
