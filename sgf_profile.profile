@@ -8,7 +8,7 @@
  * Implements hook_form_alter().
  */
 function sgf_profile_form_alter(&$form, $form_state) {
-  switch ($form_id) {
+  switch ($form) {
     case 'install_configure_form':
       // Default settings
       $form['site_information']['site_name']['#default_value'] = 'Drupal SGF';
