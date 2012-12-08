@@ -5,7 +5,3 @@ projects[] = drupal
 projects[sgf_profile][type] = "profile"
 projects[sgf_profile][download][type] = "git"
 projects[sgf_profile][download][url] = "https://github.com/DrupalSGF/sgf_profile.git"
-
-projects[sgf_theme][type] = "theme"
-projects[sgf_theme[download][type] = "git"
-projects[sgf_theme][download][url] = "https://github.com/DrupalSGF/sgf_theme.git"
