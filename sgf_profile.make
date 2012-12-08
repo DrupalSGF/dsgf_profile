@@ -4,26 +4,26 @@ api = 2
 defaults[projects][subdir] = "contrib"
 
 ; Contrib
+projects[] = addressfield
 projects[] = colorbox
 projects[] = context
 projects[] = context_addassets
 projects[] = context_inline_editor
 projects[] = ctools
+projects[] = date
+projects[] = delta
+projects[] = ds
+projects[] = features
+projects[] = github_connect
 projects[] = libraries
+projects[] = link
+projects[] = logintoboggan
 projects[] = omega_tools
 projects[] = pathauto
+projects[] = profile2
 projects[] = strongarm
 projects[] = token
-projects[] = features
-projects[] = link
-projects[] = date
-projects[] = addressfield
 projects[] = realname
-projects[] = profile2
-projects[] = logintoboggan
-projects[] = github_connect
-projects[] = ds
-projects[] = delta
 
 ; Themes
 projects[] = ember
