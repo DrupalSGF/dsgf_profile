@@ -6,9 +6,9 @@ core = 7.x
 ; dependencies[] = block
 
 ; Contrib modules
+dependencies[] = context
+dependencies[] = features
 dependencies[] = pathauto
 dependencies[] = strongarm
-dependencies[] = features
 dependencies[] = token
 dependencies[] = views
-dependencies[] = context
