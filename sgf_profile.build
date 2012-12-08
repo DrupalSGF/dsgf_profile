@@ -1,6 +1,6 @@
 core = 7.x
 api = 2
-projects[drupal][patch][1266572] = http://drupal.org/files/1266572-20-workaround-in-sqlite-some-update-missed-d7-do-not-test.patch
+projects[] = drupal
 
 projects[sgf_profile][type] = "profile"
 projects[sgf_profile][download][type] = "git"
