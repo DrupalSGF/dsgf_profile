@@ -24,6 +24,7 @@ projects[] = profile2
 projects[] = strongarm
 projects[] = token
 projects[] = realname
+projects[] = views
 
 ; Themes
 projects[] = ember
