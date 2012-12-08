@@ -10,3 +10,4 @@ dependencies[] = pathauto
 dependencies[] = strongarm
 dependencies[] = features
 dependencies[] = token
+dependencies[] = views
