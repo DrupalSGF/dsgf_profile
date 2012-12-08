@@ -11,3 +11,4 @@ dependencies[] = strongarm
 dependencies[] = features
 dependencies[] = token
 dependencies[] = views
+dependencies[] = context
