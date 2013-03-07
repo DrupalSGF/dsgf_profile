@@ -2,6 +2,6 @@ core = 7.x
 api = 2
 projects[] = drupal
 
-projects[sgf_profile][type] = "profile"
-projects[sgf_profile][download][type] = "git"
-projects[sgf_profile][download][url] = "https://github.com/DrupalSGF/sgf_profile.git"
+projects[dsgf_profile][type] = "profile"
+projects[dsgf_profile][download][type] = "git"
+projects[dsgf_profile][download][url] = "https://github.com/DrupalSGF/dsgf_profile.git"
