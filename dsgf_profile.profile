@@ -7,13 +7,13 @@
 /**
  * Implements hook_form_alter().
  */
-function sgf_profile_form_alter(&$form, $form_state) {
+function dsgf_profile_form_alter(&$form, $form_state) {
   switch ($form) {
     case 'install_configure_form':
       // Default settings
       $form['site_information']['site_name']['#default_value'] = 'Drupal SGF';
       $form['admin_account']['account']['name']['#default_value'] = 'admin';
-      $form['admin_account']['account']['mail']['#default_value'] = 'site@drupalsgf.org';
+      $form['admin_account']['account']['mail']['#default_value'] = 'info@drupalsgf.org';
       $form['server_settings']['site_default_country']['#default_value'] = 'US';
   }
 }
@@ -21,11 +21,11 @@ function sgf_profile_form_alter(&$form, $form_state) {
 /**
  *  Implements hook_image_default_styles().
  */
-function sgf_profile_image_default_styles() {
+function dsgf_profile_image_default_styles() {
   $styles = array();
-  // Blog Header
-  $styles['blog_header'] = array(
-    'name' => 'blog_header',
+  // Event Snapshot
+  $styles['event_snapshot'] = array(
+    'name' => 'event_snapshot',
     'effects' => array(
       1 => array(
         'label' => t('Scale and crop'),
@@ -48,3 +48,4 @@ function sgf_profile_image_default_styles() {
   return $styles;
 
 }
+
