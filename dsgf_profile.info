@@ -1,5 +1,5 @@
-name = SGF Install Profile
-desc = A website's install profile.
+name = DrupalSGF Install Profile
+desc = For testing, developing, or deploying.
 core = 7.x
 
 ; Core
