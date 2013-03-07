@@ -18,18 +18,14 @@ projects[] = ds
 projects[] = entity
 projects[] = features
 projects[] = fences
-projects[] = github_connect
 projects[] = libraries
 projects[] = link
-projects[] = logintoboggan
 projects[] = navbar
 projects[] = oauth
 projects[] = omega_tools
 projects[] = pathauto
-projects[] = profile2
 projects[] = strongarm
 projects[] = token
-projects[] = realname
 projects[] = views
 
 ; Themes
