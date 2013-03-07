@@ -36,6 +36,10 @@ function sgf_profile_install() {
   user_role_save($admin_role);
   user_role_grant_permissions($admin_role->rid, array_keys(module_invoke_all('permission')));
 
+  // Grant other roles default permissions
+  user_role_grant_permissions(DRUPAL_ANONYMOUS_RID, array('access content'));
+  user_role_grant_permissions(DRUPAL_AUTHENTICATED_RID, array('access content'));
+
   // Set the administrator role.
   variable_set('user_admin_role', $admin_role->rid);
 
@@ -54,12 +58,16 @@ function sgf_profile_install() {
   variable_set('pathauto_node_blog_pattern', 'blog/[user:name]/[node:title]');
 
   // Theme settings
+  theme_enable(array('shiny', 'omega'));
   variable_set('theme_default', 'omega');
-  variable_set('admin_theme', 'ember');
+  variable_set('admin_theme', 'shiny');
   variable_set('node_admin_theme', '1');
 
   // Various settings
   variable_set('site_default_country', 'US');
   variable_set('site_frontpage', 'blog');
+
+  // Update menu_router info
+  menu_rebuild();
 }
 
