@@ -6,7 +6,6 @@ core = 7.x
 dependencies[] = block
 dependencies[] = dblog
 dependencies[] = file
-dependencies[] = file_ui
 dependencies[] = image
 dependencies[] = path
 
