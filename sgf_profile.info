@@ -3,12 +3,21 @@ desc = A website's install profile.
 core = 7.x
 
 ; Core
-; dependencies[] = block
+dependencies[] = block
+dependencies[] = dblog
+dependencies[] = file
+dependencies[] = file_ui
+dependencies[] = image
+dependencies[] = path
 
 ; Contrib modules
 dependencies[] = context
+dependencies[] = entity
 dependencies[] = features
 dependencies[] = pathauto
 dependencies[] = strongarm
 dependencies[] = token
 dependencies[] = views
+
+; Settings
+php_memory_limit = 128M
